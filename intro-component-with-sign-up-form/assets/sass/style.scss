@@ -1,0 +1,80 @@
+@import 'colors';
+@import 'sharedstyles';
+body {
+    background-color: $primary-color;
+    background-image: url('../images/bg-intro-desktop.png');
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    @media (max-width: 700px) {
+        background-image: url('../images/bg-intro-mobile.png');
+        margin-bottom: 50px;
+    }
+    .container {
+        display: flex;
+        margin: auto;
+        margin-top: 100px;
+        width: 90%;
+        @media (max-width: 700px) {
+            display: block;
+        }
+    }
+    .content-desc {
+        color: $basicwhite;
+        width: 30%;
+        margin: 120px 40px 0 200px;
+        padding-right: 20px;
+        @media (max-width: 700px) {
+            text-align: center;
+            margin: auto;
+        }
+        h1 {
+            font-size: 2.4em;
+            @media (max-width: 700px) {
+                font-size: 1.5em;
+            }
+        }
+        p {
+            margin-top: 20px;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 1.7;
+            color: $basicwhite;
+        }
+    }
+    #form-header {
+        width: 40%;
+        @media (max-width: 700px) {
+            margin: auto;
+            margin-top: 10px;
+            width: max-content;
+        }
+    }
+    #form-top {
+        background-color: $accblue;
+        text-align: center;
+        color: $basicwhite;
+        width: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding: 15px 0;
+        box-shadow: 0px 7px 0px #5f5e5e78;
+        @media (max-width: 700px) {
+            border-radius: 6px;
+            font-size: 0.8rem;
+        }
+    }
+    #signup {
+        background-color: $basicwhite;
+        padding: 15px 35px;
+        border-radius: 10px;
+        box-shadow: 0px 7px 0px #5f5e5e78;
+        #terms {
+            font-size: 0.63rem;
+            text-align: center;
+            font-weight: bolder;
+            color: $gblue;
+            padding-top: 0;
+            padding-bottom: 30px;
+        }
+    }
+}
